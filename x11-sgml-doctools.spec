@@ -3,6 +3,7 @@ Version: 1.2
 Release: %mkrel 1
 Summary: Xorg X11 sgml documentation tools
 Group: Development/X11
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 URL: http://xorg.freedesktop.org
 Source: http://xorg.freedesktop.org/releases/individual/doc/xorg-sgml-doctools-%{version}.tar.bz2
 License: MIT
