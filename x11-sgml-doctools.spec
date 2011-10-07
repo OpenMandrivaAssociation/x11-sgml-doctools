@@ -1,6 +1,6 @@
 Name: x11-sgml-doctools
-Version: 1.6
-Release: %mkrel 2
+Version: 1.10
+Release: %mkrel 1
 Summary: Xorg X11 sgml documentation tools
 Group: Development/X11
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
@@ -35,5 +35,6 @@ rm -rf %{buildroot}
 %defattr(-,root,root)
 %{_datadir}/sgml/X11/defs.ent
 %{_datadir}/sgml/X11/xorg.css
-%{_datadir}/sgml/X11/xorg.xsl
+%{_datadir}/sgml/X11/*.xsl
+%{_datadir}/sgml/X11/dbs/*.xml
 %{_datadir}/pkgconfig/xorg-sgml-doctools.pc
