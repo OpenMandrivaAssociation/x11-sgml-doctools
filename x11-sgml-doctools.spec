@@ -1,11 +1,10 @@
 Name: x11-sgml-doctools
-Version: 1.10
-Release: %mkrel 1
+Version: 1.11
+Release: 1
 Summary: Xorg X11 sgml documentation tools
 Group: Development/X11
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 URL: http://xorg.freedesktop.org
-Source: http://xorg.freedesktop.org/releases/individual/doc/xorg-sgml-doctools-%{version}.tar.bz2
+Source0: http://xorg.freedesktop.org/releases/individual/doc/xorg-sgml-doctools-%{version}.tar.bz2
 License: MIT
 
 BuildRequires: x11-util-macros >= 1.0.1
@@ -28,13 +27,13 @@ Xorg X11 sgml documentation tools
 rm -rf %{buildroot}
 %makeinstall_std
 
-%clean
-rm -rf %{buildroot}
-
 %files
 %defattr(-,root,root)
 %{_datadir}/sgml/X11/defs.ent
 %{_datadir}/sgml/X11/xorg.css
-%{_datadir}/sgml/X11/*.xsl
-%{_datadir}/sgml/X11/dbs/*.xml
+%{_datadir}/sgml/X11/xorg.xsl
+%{_datadir}/sgml/X11/dbs/masterdb.*
+%{_datadir}/sgml/X11/xorg-fo.xsl
+%{_datadir}/sgml/X11/xorg-chunk.xsl
+%{_datadir}/sgml/X11/xorg-xhtml.xsl
 %{_datadir}/pkgconfig/xorg-sgml-doctools.pc
