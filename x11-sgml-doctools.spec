@@ -6,6 +6,7 @@ Group: Development/X11
 URL: http://xorg.freedesktop.org
 Source0: http://xorg.freedesktop.org/releases/individual/doc/xorg-sgml-doctools-%{version}.tar.bz2
 License: MIT
+BuildArch: noarch
 
 BuildRequires: x11-util-macros >= 1.0.1
 
@@ -24,11 +25,9 @@ Xorg X11 sgml documentation tools
 %make
 
 %install
-rm -rf %{buildroot}
 %makeinstall_std
 
 %files
-%defattr(-,root,root)
 %{_datadir}/sgml/X11/defs.ent
 %{_datadir}/sgml/X11/xorg.css
 %{_datadir}/sgml/X11/xorg.xsl
