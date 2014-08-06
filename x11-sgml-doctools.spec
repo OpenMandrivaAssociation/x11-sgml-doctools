@@ -5,6 +5,7 @@ Summary: Xorg X11 sgml documentation tools
 Group: Development/X11
 URL: http://xorg.freedesktop.org
 Source0: http://xorg.freedesktop.org/releases/individual/doc/xorg-sgml-doctools-%{version}.tar.bz2
+Source1: x11-sgml-doctools.rpmlintrc
 License: MIT
 BuildArch: noarch
 
@@ -19,7 +20,7 @@ Xorg X11 sgml documentation tools
 %setup -q -n xorg-sgml-doctools-%{version}
 
 %build
-%configure2_5x	--x-includes=%{_includedir}\
+%configure	--x-includes=%{_includedir}\
 		--x-libraries=%{_libdir}
 
 %make
