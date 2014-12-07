@@ -1,6 +1,6 @@
 Name: x11-sgml-doctools
 Version: 1.11
-Release: 7
+Release: 8
 Summary: Xorg X11 sgml documentation tools
 Group: Development/X11
 URL: http://xorg.freedesktop.org
