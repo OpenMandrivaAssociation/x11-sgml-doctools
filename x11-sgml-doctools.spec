@@ -3,7 +3,7 @@ Version:	1.12
 Release:	2
 Summary: Xorg X11 sgml documentation tools
 Group: Development/X11
-URL: http://xorg.freedesktop.org
+URL: https://xorg.freedesktop.org
 Source0: http://xorg.freedesktop.org/releases/individual/doc/xorg-sgml-doctools-%{version}.tar.bz2
 Source1: x11-sgml-doctools.rpmlintrc
 License: MIT
