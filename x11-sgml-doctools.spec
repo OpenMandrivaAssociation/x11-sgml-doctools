@@ -8,6 +8,11 @@ Source0: http://xorg.freedesktop.org/releases/individual/doc/xorg-sgml-doctools-
 Source1: x11-sgml-doctools.rpmlintrc
 License: MIT
 BuildArch: noarch
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires: x11-util-macros >= 1.0.1
 Obsoletes: xorg-x11 < 7.0
 
